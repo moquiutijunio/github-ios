@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Github API
+
+  Created by Junio Moquiuti on 25/01/20.
+  Copyright © 2020 Junio Moquiuti. All rights reserved.
+*/
+
+
+//Defaults
+"users" = "Users";
+"cancel" = "Cancel";
+"profile" = "Profile";
+"searching" = "Searching...";
+
+//Errors
+"generic.request.error" = "The requested information could not be loaded, please try again later!";
+
+//Home
+"search.for.users" = "Search for users";
+
+//Repositories
+"user.repository" = "%@'s Repositories";
+
+//UserDetails
+"user.followers" = "%@ Followers";
+"user.following" = "%@ Following";
+"user.public.repositories" = "%@ Public Repositories";

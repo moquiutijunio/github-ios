@@ -1,0 +1,44 @@
+PODS:
+  - Cartography (4.0.0)
+  - INSPullToRefresh (1.2.0)
+  - Kingfisher (5.12.0):
+    - Kingfisher/Core (= 5.12.0)
+  - Kingfisher/Core (5.12.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - SwiftLint (0.38.0)
+
+DEPENDENCIES:
+  - Cartography
+  - INSPullToRefresh
+  - Kingfisher
+  - RxCocoa
+  - RxSwift
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Cartography
+    - INSPullToRefresh
+    - Kingfisher
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
+  INSPullToRefresh: d34f0046ccca6b32f6386f053d730ef41b3f35b7
+  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
+
+PODFILE CHECKSUM: b93de73b24d92cb54f00f91cd2fb3c57a70bbf43
+
+COCOAPODS: 1.8.4

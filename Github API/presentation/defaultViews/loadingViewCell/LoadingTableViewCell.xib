@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4bg-2P-slu" customClass="LoadingTableViewCell" customModule="Github_API" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ERf-uH-8uN">
+                    <rect key="frame" x="16" y="7.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="NFQ-kE-68g"/>
+                        <constraint firstAttribute="width" constant="40" id="moM-FL-7vu"/>
+                    </constraints>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT1-yx-KyZ">
+                    <rect key="frame" x="68" y="12" width="330" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="lR7-nh-VXx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dT1-yx-KyZ" firstAttribute="leading" secondItem="ERf-uH-8uN" secondAttribute="trailing" constant="12" id="Qbq-au-KMK"/>
+                <constraint firstItem="ERf-uH-8uN" firstAttribute="leading" secondItem="drh-5V-w7I" secondAttribute="leading" constant="16" id="Qdc-MR-DH6"/>
+                <constraint firstItem="drh-5V-w7I" firstAttribute="trailing" secondItem="dT1-yx-KyZ" secondAttribute="trailing" constant="16" id="Rj4-RU-fMx"/>
+                <constraint firstItem="ERf-uH-8uN" firstAttribute="centerY" secondItem="4bg-2P-slu" secondAttribute="centerY" id="l1W-Qt-xe4"/>
+                <constraint firstItem="dT1-yx-KyZ" firstAttribute="top" secondItem="4bg-2P-slu" secondAttribute="top" constant="12" id="mdZ-UU-cDD"/>
+                <constraint firstItem="drh-5V-w7I" firstAttribute="bottom" secondItem="dT1-yx-KyZ" secondAttribute="bottom" constant="12" id="rdN-0R-vdP"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="drh-5V-w7I"/>
+            <connections>
+                <outlet property="activityIndicationView" destination="ERf-uH-8uN" id="Wyc-30-uWT"/>
+                <outlet property="loadingLabel" destination="dT1-yx-KyZ" id="NZD-Nn-4nC"/>
+            </connections>
+            <point key="canvasLocation" x="-401.44927536231887" y="190.51339285714286"/>
+        </view>
+    </objects>
+</document>
