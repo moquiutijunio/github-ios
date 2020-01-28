@@ -10,6 +10,7 @@ import Foundation
 
 struct User {
     
+    var id: Int?
     var name: String?
     var login: String
     var avatar: URL?
@@ -27,7 +28,8 @@ extension User {
             return nil
         }
         
-        return User(name: user.name,
+        return User(id: user.id,
+                    name: user.name,
                     login: login,
                     avatar: user.avatar,
                     bio: user.bio,

@@ -10,6 +10,7 @@ import Foundation
 
 struct Repository {
     
+    var id: Int?
     var name: String
     var description: String?
     var stargazersCount: Int
@@ -17,15 +18,16 @@ struct Repository {
 
 
 extension Repository {
-        
+    
     static func map(repository: RepositoryAPI) -> Repository? {
         guard let name = repository.name else {
             return nil
         }
         
-        return Repository(name: name,
-                    description: repository.description,
-                    stargazersCount: repository.stargazersCount ?? 0)
+        return Repository(id: repository.id,
+                          name: name,
+                          description: repository.description,
+                          stargazersCount: repository.stargazersCount ?? 0)
     }
     
     static func mapArray(repositories: [RepositoryAPI]) -> [Repository] {

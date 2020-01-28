@@ -10,6 +10,11 @@
 		544975DE4EC34C0E9AB2899D /* Pods_Github_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816C961FA07E463DF6C5A243 /* Pods_Github_API.framework */; };
 		C2BA1A86FECC0A170F01500E /* libPods-Github APIUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD6907D6B90B1745196E041 /* libPods-Github APIUITests.a */; };
 		EC182990BA90D3273F2B9F6E /* libPods-Github APITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F358E15475EA186E157D37 /* libPods-Github APITests.a */; };
+		F034BF1423E05E2700E3456C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0967D1623DC9780008DC925 /* Result.swift */; };
+		F034BF1523E05E3300E3456C /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0967D1323DC9497008DC925 /* UserAPI.swift */; };
+		F034BF1623E061D800E3456C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07A47B323DCD3B4009AD628 /* User.swift */; };
+		F034BF1723E0630500E3456C /* RepositoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0967D1E23DCB6EC008DC925 /* RepositoryAPI.swift */; };
+		F034BF1823E0630A00E3456C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07A47C423DCFE36009AD628 /* Repository.swift */; };
 		F039055C23DE681500180914 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F039055B23DE681500180914 /* UserDetailsViewModel.swift */; };
 		F039055E23DE709400180914 /* Kingfisher+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F039055D23DE709400180914 /* Kingfisher+URL.swift */; };
 		F039056023DE94CA00180914 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = F039055F23DE94CA00180914 /* Credentials.swift */; };
@@ -802,7 +807,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F034BF1723E0630500E3456C /* RepositoryAPI.swift in Sources */,
+				F034BF1623E061D800E3456C /* User.swift in Sources */,
+				F034BF1423E05E2700E3456C /* Result.swift in Sources */,
 				F0967CEA23DC87CF008DC925 /* Github_APITests.swift in Sources */,
+				F034BF1523E05E3300E3456C /* UserAPI.swift in Sources */,
+				F034BF1823E0630A00E3456C /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
