@@ -16,13 +16,8 @@ target 'Github API' do
   pod 'RxSwift'
   pod 'RxCocoa'
   
-end
-
-target 'Github APITests' do
-  inherit! :search_paths
-  
-end
-
-target 'Github APIUITests' do
-  
+  target 'Github APITests' do
+    inherit! :search_paths
+    pod 'RxSwift'
+  end
 end

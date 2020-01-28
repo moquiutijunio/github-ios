@@ -7,9 +7,43 @@
 //
 
 import XCTest
+import RxSwift
 @testable import Github_API
 
 class Github_APITests: XCTestCase {
+    
+    func testSearchUser() {
+        
+        //Instance client
+        let apiClient = APIClient()
+        let query = "MoquiutiJunio"
+        let expectation = XCTestExpectation(description: "Search Users in Github API")
+        
+        //Assert
+        apiClient.request(.searchUsers(query: query)) { (result) in
+            
+            switch result {
+            case .success(let data):
+                guard let users = UserAPI.mapArray(data: data),
+                    let user = users.first else {
+                        XCTFail("Failed to mapper userAPI")
+                        return
+                }
+                
+                XCTAssertEqual(user.id, 10856384)
+                XCTAssertEqual(user.login, "moquiutijunio")
+                
+            case .failure(let error):
+                XCTFail("Expected to succeed but failed with error \(error)")
+            }
+            
+            // Fulfill the expectation to indicate that the background task has finished.
+            expectation.fulfill()
+        }
+        
+        // Wait until the expectation is fulfilled, with a timeout of 10 seconds.
+        wait(for: [expectation], timeout: 10)
+    }
 
     func testUserResult() {
     
