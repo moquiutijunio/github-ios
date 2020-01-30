@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "2779de90-bfc3-4aed-9435-0862cc8945e0",
+		"name": "Github API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic bW9xdWl1dGlqdW5pbzpjODUyOWE1MGQ1Nzg0MTIwNzE3M2VhNjdhZGY2N2RlOTQ3NWU0ZTY5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "authorization",
+							"value": "Basic bW9xdWl1dGlqdW5pbzpjODUyOWE1MGQ1Nzg0MTIwNzE3M2VhNjdhZGY2N2RlOTQ3NWU0ZTY5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "accessToken",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.github.com/search/users?q=moquiutijunio",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"users"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "moquiutijunio"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Repository",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/users/moquiutijunio/repos?page=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"users",
+						"moquiutijunio",
+						"repos"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search User Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/users/moquiutijunio",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"users",
+						"moquiutijunio"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
